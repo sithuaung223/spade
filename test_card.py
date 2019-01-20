@@ -13,6 +13,7 @@ def test_card_eq_twodifferentcards():
     three_club = Card(Rank.three, Suit.club)
     assert two_heart != three_club
 
+
 def test_card_eq_twosamecards():
     two_heart = Card(Rank.two, Suit.heart)
     another_two_heart = Card(Rank.two, Suit.heart)
@@ -22,7 +23,7 @@ def test_card_eq_twosamecards():
 def test_create_deck__full52uniquecards():
     deck = create_deck()
     assert len(deck) == 52
-    #test uniqueness of the cards
+    # test uniqueness of the cards
     s = set(deck)
     assert len(s) == 52
 

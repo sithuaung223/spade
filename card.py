@@ -4,7 +4,7 @@ import random
 
 class Rank(Enum):
     def __str__(self):
-        return str(self.value) if self.value <=10 else str(self.name)
+        return str(self.value) if self.value <= 10 else str(self.name)
     ace = 1
     two = 2
     three = 3
